@@ -7,4 +7,4 @@ class cart:
 
     # перейти из корзины к оплате
     def Checkout(self):
-        self._driver.find_element(By.ID, 'checkout').click()
+        self._driver.find_element(By.ID, "checkout").click()

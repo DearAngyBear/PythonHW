@@ -6,7 +6,8 @@ from pages.data_form_page import *
 
 
 def test_data_form():
-    driver = webdriver.Chrome(service=ChromeService(ChromeDriverManager().install()))
+    driver = webdriver.Chrome\
+        (service=ChromeService(ChromeDriverManager().install()))
 
     first_action = enter_data(driver)
     first_action.send_info()

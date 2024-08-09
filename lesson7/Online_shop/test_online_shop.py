@@ -10,6 +10,7 @@ from pages.enter_information import enter_information
 from pages.confirm_page import confirm_page
 from config import Right_total
 
+
 def test_online_shop():
     driver = webdriver.Chrome(service=ChromeService(ChromeDriverManager().install()))
 
@@ -28,5 +29,5 @@ def test_online_shop():
 
     confirm = confirm_page(driver)
     assert Right_total in confirm.Total_cost()
-    
+
     driver.quit()

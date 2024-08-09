@@ -7,8 +7,8 @@ from pages.Calculator import *
 
 def test_calculator():
     driver = webdriver.Chrome(service=ChromeService(ChromeDriverManager().install()))
-    delay = 50 # выставить время ожидания - числовой параметр
-    expected_result = '15' # указать ожидаемый результат - строчный параметр
+    delay = 50  # выставить время ожидания - числовой параметр
+    expected_result = "15"  # указать ожидаемый результат - строчный параметр
 
     calculator = Calculator(driver)
     calculator.get()
@@ -19,6 +19,5 @@ def test_calculator():
     calculator.click__result()
 
     assert expected_result in calculator.take_result(delay, expected_result)
-   
-    driver.quit()
 
+    driver.quit()
